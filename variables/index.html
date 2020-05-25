@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>Soy el h1</h1>
+    
+    <script>
+        //variables, diferencia entre mayuscula y minuscula, el nombre no puede iniciar con un numero
+        var numero1 = 10;
+        var string = '10';
+        const numeroDos = 10; //NO SE SOBREESCRIBE
+//        alert(numero1 + numeroDos);
+//        alert(numero1 + string); //se concatenan los strings
+  //      numero1 = numero1 + 1;
+  //      numero1--
+  //      console.log(numero1); // se visualiza en la consola
+
+        //  CONDICIONALES
+        var numero = 10;
+        var nombre = 'Juan';
+        var verdadero = true; // true o false
+
+        if(numero>5 && nombre=='Juan'){  // el o se pone ||, y es &&
+            console.log('verdadero');
+        }
+        else{
+            console.log('falso');
+        }
+
+        //BOOLEANOS
+        if(verdadero){  // las booleanas se evaluan por defecto en verdadero 
+            console.log('verdadero');
+        }
+        else{
+            console.log('falso');
+        }
+        
+        //Para evaluar booleanos en false
+        if(!verdadero){  // evalua si verdadero==false
+            console.log('verdadero');
+        }
+        else{
+            console.log('falso');
+        }
+
+///////////////   ARRAY ///////////////////
+        var arreglo = [1, 5, 10, 'Juanci', true]; 
+        console.log(arreglo);
+        console.log(arreglo[3]);
+
+        //FOR
+        console.log('FOR');
+        for(var i=0; i<arreglo.length; i++){
+        console.log(arreglo[i]);
+        }
+
+        //WHILE
+        console.log('WHILE');
+        var i = 0
+        while(i<10){
+            console.log(i);
+            i++;
+        }
+
+        //Do WHILE
+        i=0;
+        console.log('Do WHILE');
+        do{
+            console.log(i);
+            i++;
+        }while(i<10)
+
+        //SWITCH    
+        var hora = 10;
+        switch(hora){
+            case 10: 
+                console.log('Son las 10 am');
+                break;
+            case 15:
+                console.log('Son las 15 am');
+                break;
+            default: 
+                console.log('No tengo saludo');
+                break;
+        }
+
+//////////   FUNCIONES /////////////
+        console.log('FUNCIONES');
+
+        function suma(num1, num2){
+            return console.log(num1 + num2);
+        }
+
+        suma(15,17);
+
+
+    </script>
+
+</body>
+</html>
